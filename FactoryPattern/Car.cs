@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-    class Program
+    class Car
     {
-        static void Main(string[] args)
-        {
-            // This is the starting...
-        }
     }
 }
