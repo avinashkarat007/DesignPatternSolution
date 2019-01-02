@@ -10,6 +10,7 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
+            // This is the starting.
         }
     }
 }
