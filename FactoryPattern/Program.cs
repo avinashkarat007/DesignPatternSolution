@@ -11,6 +11,20 @@ namespace FactoryPattern
         static void Main(string[] args)
         {
             // This is the starting...
+            Console.WriteLine("Enter the car name");
+
+            string carName = Console.ReadLine();
+
+
+            AutoFactory autoFactory = new AutoFactory();
+
+            IAuto car = autoFactory.CreateInstance(carName);
+
+            car.On();
+
+            car.Off();
+
+            Console.ReadLine();
         }
     }
 }

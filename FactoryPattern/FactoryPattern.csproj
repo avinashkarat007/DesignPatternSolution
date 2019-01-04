@@ -46,6 +46,8 @@
     <Compile Include="AutoFactory.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="IAuto.cs" />
+    <Compile Include="MiniCooper.cs" />
+    <Compile Include="NullAuto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

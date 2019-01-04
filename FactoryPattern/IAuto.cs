@@ -8,5 +8,8 @@ namespace FactoryPattern
 {
     public interface IAuto
     {
+        void On();
+
+        void Off();
     }
 }

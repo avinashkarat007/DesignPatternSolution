@@ -19,6 +19,31 @@ namespace FactoryPattern
             LoadTypesAndReturn();
         }
 
+        public IAuto CreateInstance(string carName)
+        {
+            Type t = GetTypeToCreate(carName);
+
+            if (t == null)
+            {
+                return new NullAuto();
+            }
+
+            return Activator.CreateInstance(t) as IAuto;
+        }
+
+        Type GetTypeToCreate(string carName)
+        {
+            foreach (var auto in autos)
+            {
+                if (auto.Key.Contains(carName))
+                {
+                    return autos[auto.Key];
+                }     
+            }
+
+            return null;
+        }
+
         // This method returns all the types in the current executing assembly as a Dictionary.
         private void LoadTypesAndReturn()
         {
