@@ -16,6 +16,8 @@ namespace FactoryPattern
             string carName = Console.ReadLine();
 
 
+            // 105c5674-949e-45ed-b67f-3ebb23adcd84
+
             AutoFactory autoFactory = new AutoFactory();
 
             IAuto car = autoFactory.CreateInstance(carName);
